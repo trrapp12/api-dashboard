@@ -1,0 +1,44 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.background-image {
+    background: fixed no-repeat no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: absolute;
+    /* Takes the image out of the flow and positions it according to the nearest positioned ancestor */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    /* Covers the full viewport width */
+    height: 100vh;
+    /* Covers the full viewport height */
+    object-fit: cover;
+    /* Ensures the aspect ratio of the image is maintained */
+    z-index: -1;
+    /* Ensures the image stays behind any other content you might add */
+}
+
+.timer {
+    width: 20%;
+    height: min-content;
+    font-size: 4rem;
+    color: white;
+    z-index: 5;
+    grid-row: 4 / 5;
+    grid-column: 3 / 4;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1em repeat(3, 1fr) 1em;
+    grid-template-rows: 1em repeat(12, 1fr) 1em;
+
+}

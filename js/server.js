@@ -1,9 +1,12 @@
 const express = require('express');
 const axios = require('axios');
 const https = require('https');
+const cors = require('cors');
 require('dotenv').config();
 
 const app = express();
+app.use(cors());
+
 const port = process.env.PORT || 5500;
 
 const agent = new https.Agent({  
@@ -27,7 +30,7 @@ const agent = new https.Agent({
 app.get('/getBackground/', async (req, res) => {
     // unsplash api
     try {
-        const response = await axios.get('https://api.unsplash.com/photos/random?content_filter=high&orientation=landscape', {
+        const response = await axios.get('https://api.unsplash.com/photos/random?content_filter=high&orientation=landscape&count=1', {
         // `https://api.unsplash.com/photos/random?client_id=${UNSPLASH_API_KEY}&content_filter=high&orientation=landscape`     
         headers: {
                 Authorization: `Client-ID ${process.env.UNSPLASH_API_KEY}`,

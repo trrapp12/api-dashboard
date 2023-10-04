@@ -7,25 +7,11 @@ require('dotenv').config();
 const app = express();
 app.use(cors());
 
-const port = process.env.PORT || 5500;
+const port = process.env.PORT || 5501;
 
 const agent = new https.Agent({  
     rejectUnauthorized: false
 });
-
-// app.get('/getNotes', async (req, res) => {
-//     try {
-//         const response = await axios.get('YOUR_API_URL', {
-//             headers: {
-//                 Authorization' : `Bearer ${process.env.API_KEY}`
-//         }
-//     });
-//         res.send(response.data);
-//     } catch (error) {
-//         console.error(error);
-//         res.status(500).send(error);
-//     }
-// });
 
 app.get('/getBackground/', async (req, res) => {
     // unsplash api
@@ -43,6 +29,20 @@ app.get('/getBackground/', async (req, res) => {
         res.status(500).send(error);
     }
 });
+// app.get('/getNotes', async (req, res) => {
+//     try {
+//         const response = await axios.get('YOUR_API_URL', {
+//             headers: {
+//                 Authorization' : `Bearer ${process.env.API_KEY}`
+//         }
+//     });
+//         res.send(response.data);
+//     } catch (error) {
+//         console.error(error);
+//         res.status(500).send(error);
+//     }
+// });
+
 
 // app.get('/getWeather/:lat/:lon', async (req, res) => {
 //     // openweathermap api

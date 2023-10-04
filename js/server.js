@@ -1,6 +1,6 @@
 const express = require('express');
 const axios = require('axios');
-const https = require('https');
+// const https = require('https');
 const cors = require('cors');
 require('dotenv').config();
 
@@ -9,9 +9,9 @@ app.use(cors());
 
 const port = process.env.PORT || 5501;
 
-const agent = new https.Agent({  
-    rejectUnauthorized: false
-});
+// const agent = new https.Agent({  
+//     rejectUnauthorized: false
+// });
 
 app.get('/getBackground/', async (req, res) => {
     // unsplash api
@@ -21,7 +21,7 @@ app.get('/getBackground/', async (req, res) => {
         headers: {
                 Authorization: `Client-ID ${process.env.UNSPLASH_API_KEY}`,
             },
-            httpsAgent: agent 
+            // httpsAgent: agent 
         });
         res.send(response.data);
     } catch (error) {

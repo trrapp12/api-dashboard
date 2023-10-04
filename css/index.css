@@ -123,4 +123,6 @@ main {
     transform: rotateX(-90deg) translateZ(55px) translateY(56px);
     width: 333px;
     height: 110px;
+    background-color: white;
+    color: black;
 }

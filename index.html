@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <title>Personal Dashboard</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
@@ -24,7 +31,16 @@
             <div class="scene" id="scene">
                 <div id="cube" class="cube">
                     <h1 id="timer" class="cube-face cube-front timer"></h1>
-                    <h1 id="pomodorro" class="cube-face cube-bottom pomodorro"></h1>
+                    <h1 id="pomodorro" class="cube-face cube-bottom pomodorro">Pomod<span
+                            class="material-symbols-outlined stop-watch">
+                            timer
+                        </span>rro<span id="play" class="material-symbols-outlined play">
+                            play_arrow
+                        </span>
+                        <span id="pause" class="material-symbols-outlined pause hide">
+                            pause
+                        </span>
+                    </h1>
                 </div>
             </div>
 

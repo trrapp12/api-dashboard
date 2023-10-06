@@ -9,6 +9,7 @@
     const pauseButton = document.getElementById('pause')
     let endTime;
     let pomodorroPlaying = false;
+    var audio = new Audio("assets/Did-You-Know_AdobeStock_353736224_preview.m4a")
 
     cubeContainer.addEventListener("click", (evt) => {
         if (evt.target.id === 'play') {
@@ -16,7 +17,7 @@
             playButton.classList.toggle('hide');
             pauseButton.classList.toggle('hide')
         } else if (evt.target.id === 'pause') {
-            pomodorroPlaying = true
+            pomodorroPlaying = false
             playButton.classList.toggle('hide');
             pauseButton.classList.toggle('hide')
         } else if (evt.target.closest('#scene')) {
@@ -39,18 +40,24 @@
         let timeRemaining = endTime - starttime;
 
         if (timeRemaining <= 0 ) {
+            audio.play()
             clearInterval(intervalId)
         } else {
             let minutes = Math.floor(timeRemaining / 60000);
             let seconds = Math.floor((timeRemaining % 60000) / 1000);
             console.log(seconds)
-            pomodorroContainer.textContent = (`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`);
+            pomodorroContainer.innerHTML = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}<span id="play" class="material-symbols-outlined play hide">
+            play_arrow
+        </span>
+        <span id="pause" class="material-symbols-outlined pause">
+            pause
+        </span>`;
         }
 
     }
 
    pomodorroContainer.addEventListener('click', ()=> {
-    if (!endTime) {
+    if (!endTime && pomodorroPlaying === false) {
         endTime = Date.now() + onePomodorro;
         intervalId = setInterval(countdown, 1000)
     }

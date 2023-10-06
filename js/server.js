@@ -62,20 +62,20 @@ app.get('/getBackground/', async (req, res) => {
 //     }
 // });
 
-// app.get('/getWord', async (req, res) => {
-//     // OED api
-//     try {
-//         const response = await axios.get('https://od-api.oxforddictionaries.com/api/v2/entries/en-gb/ace', {
-//             headers: {
-//                 'app_id': process.env.OED_APP_ID,
-//                 'app_key': process.env.OED_APP_KEY
-//             }
-//         })
-//         res.send(response.data);
-//     } catch (error) {
-//         console.error(error);
-//         res.status(500).send(error)
-//     }
-// });
+app.get('/getWord', async (req, res) => {
+    // OED api
+    try {
+        const response = await axios.get('https://od-api.oxforddictionaries.com/api/v2/entries/en-gb/ace', {
+            headers: {
+                'app_id': process.env.OED_APP_ID,
+                'app_key': process.env.OED_APP_KEY
+            }
+        })
+        res.send(response.data);
+    } catch (error) {
+        console.error(error);
+        res.status(500).send(error)
+    }
+});
 
 app.listen(port, () => console.log(`Listening on port ${port}`));

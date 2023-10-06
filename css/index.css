@@ -5,6 +5,7 @@ body {
     font-family: 'Poiret One', sans-serif;
 }
 
+
 .background-image {
     background: fixed no-repeat no-repeat center;
     -webkit-background-size: cover;
@@ -29,9 +30,18 @@ body {
     justify-content: center;
     min-width: 100%;
     height: auto;
-    border: solid 1px red;
     display: flex;
     align-content: center;
+}
+
+/* AUTHOR NEEDS TO BE BELOW FLEX-ROW */
+#author {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-left: 4rem;
+    align-content: end;
 }
 
 .timer {
@@ -51,7 +61,6 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: black;
     min-width: 100vw;
     min-height: 100vh;
     overflow: hidden;
@@ -96,7 +105,7 @@ main {
     width: 333px;
     height: 110px;
     border: 2px solid white;
-    background-color: black;
+    background-color: #FFFFFF10;
     color: white;
 }
 
@@ -149,4 +158,11 @@ main {
     position: absolute;
     right: 20px;
     top: calc(50% - 9px);
+}
+
+.last-name,
+.first-name {
+    font-size: 2rem;
+    padding: 0rem .25rem;
+    color: white;
 }

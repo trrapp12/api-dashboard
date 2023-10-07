@@ -27,7 +27,7 @@ body {
 }
 
 .flex-row {
-    justify-content: center;
+    justify-content: space-between;
     min-width: 100%;
     height: auto;
     display: flex;
@@ -42,6 +42,10 @@ body {
     justify-content: flex-start;
     padding-left: 4rem;
     align-content: end;
+}
+
+.icon-container {
+    transform: translate(10px, -25px)
 }
 
 .timer {
@@ -165,4 +169,33 @@ main {
     font-size: 2rem;
     padding: 0rem .25rem;
     color: white;
+}
+
+.weather {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2rem;
+    max-height: 100px;
+    background-color: #FFFFFF10;
+    color: white;
+    margin: 2rem;
+    border-radius: 15px;
+}
+
+.weather-icon {
+    height: auto;
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+.weather-info-container {
+    font-size: 1.5rem;
+}
+
+.weather-info-container>div {
+    margin-bottom: .25rem;
 }

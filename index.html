@@ -23,7 +23,17 @@
             <div id="crypto">
                 <div id="crypto-top"></div>
             </div>
-            <div id="weather"></div>
+            <div id="weather" class="weather">
+                <div class="icon-container">
+                    <div class="weather-icon" id="weather-icon"></div>
+                </div>
+                <div class="weather-info-container">
+                    <div class="city" id="city"></div>
+                    <div class="condition" id="condition"></div>
+                    <div class="temp" id="temp"></div>
+                    <div class="feels-like" id="feels-like"></div>
+                </div>
+            </div>
         </div>
         <div class="flex-row">
         </div>
@@ -54,7 +64,7 @@
             </p>
         </div>
     </main>
-    <script src="js/index.js"></script>
+    <script type="module" src="./js/index.mjs"></script>
     <script src="js/timer.js"></script>
 </body>
 

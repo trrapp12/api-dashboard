@@ -60,17 +60,17 @@ Click on the "View Project" button above ⬆️
 
 1) While the course was great way to learn the theory of
 
-* http requests
-* URLs and endpoints
-* Body
-* Header
-* Resources
-* Parameters
-* Queries
-* Callbacks
-* .filter()
-* Promises
-* .then() chaining
+   * http requests
+   * URLs and endpoints
+   * Body
+   * Header
+   * Resources
+   * Parameters
+   * Queries
+   * Callbacks
+   * .filter()
+   * Promises
+   * .then() chaining
 
   The hands-on didn't seem to extend past this pattern:
 

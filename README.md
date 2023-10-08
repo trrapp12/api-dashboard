@@ -236,8 +236,8 @@ This really left me at a deficit when I went to create my own project, because I
 9) The front-end server and backend server have to be on different ports
 10) You will spend a lot of time trying to figure out why you are getting a blank screen with no console errors and then you'll realize you need run ```npm run dev```.  You mean the server actually has to be running for any of this to work?  Ughh... Always the simple stuff.
 11) BUT...you can make multiple API calls from the same port.  Like the apartment building metaphor.  My servers are two different apartment buildings.  One is client side, one is server side.  Each apartment has it's own building number (i.e. port 5500 and port 5501).  In each apartment building they have different apartments which have different numbers.  Those are the API numbers.
-12) If things are not working right sometimes a quick manual test (typing in the API call as you think it should be formulated into the browser and seeing what it gets) is quicker than 60 console.logs.
-13) And then sometimes the problem is you actually are doing something right and it's the unclear documentation that make you think you're calling the freemium API when you actually still need to subscribe.
+12) And then sometimes the problem is you actually are doing something right and it's the unclear documentation that make you think you're calling the freemium API when you actually still need to subscribe.
+13) If things are not working right sometimes a quick manual test (typing in the API call as you think it should be formulated into the browser and seeing what it gets) is quicker than 60 console.logs.
 14) When you deploy to your chrome extension you're going to see it work beautifully "in Production" until you turn your computer off and then it doesn't work again and you'll scratch your head until you realize you didn't change the fetch request of ```fetch('http://localhost:5500/getBackground')``` to the deployed server so every time you get on you will either have to open VS Code and run the server or replace ```localhost:5500``` with the address of the actual server in prod.
 
 

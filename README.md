@@ -274,7 +274,9 @@ This really left me at a deficit when I went to create my own project, because I
 
 ### ATTRIBUTIONS
 
-* Character Images created by "Travel Dawn," licensed under Adobe Standard license.
+* Icons from [Orion Icon Library](orioniconlibrary.com).
+
+* This project was inspired by the [Personal Dashboard](https://scrimba.com/learn/frontend/section-intro-co474451c9456715dcac4b188) project from the [Scrimba Front-End Developer Career Path](https://scrimba.com/learn/frontend).  The majority of the work is consistent with what was presented in the original project, with additiions and variations noted in the personal contributions section.
 
 ---
 

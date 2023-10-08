@@ -45,7 +45,8 @@ body {
 }
 
 .icon-container {
-    transform: translate(10px, -25px)
+    transform: translate(10px, -25px);
+    width: fit-content;
 }
 
 .timer {
@@ -175,14 +176,19 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-right: 2rem;
-    max-height: 100px;
     background-color: #FFFFFF10;
     color: white;
     margin: 2rem;
     border-radius: 15px;
+    width: auto;
+    padding: 2rem;
+    border-radius: 15px;
+    gap: 3rem;
+    height: fit-content;
+    border: 1px solid white;
 }
 
 .weather-icon {
@@ -190,6 +196,10 @@ main {
     width: auto;
     margin: 0px;
     padding: 0px;
+}
+
+.weather-icon>img {
+    width: 5rem;
 }
 
 .weather-info-container {

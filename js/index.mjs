@@ -24,7 +24,32 @@ fetch('http://localhost:5501/getBackground/')
     // ... handle the fetch response
     .then(response => response.json())
     .then(data => {
-      document.getElementById('weather-icon').innerHTML = `<img src="http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="weather icon" />`
+        const weatherIconLookupTable = new Map ([
+          ['01d' , 'assets/Orion_sun.png'],
+          ['01n' , 'assets/Orion_half-moon.png'],
+          ['02d' , 'assets/Orion_clouds.png'],
+          ['02n' , 'assets/Orion_clouds.png'],
+          ['03d' , 'assets/Orion_clouds.png'],
+          ['03n' , 'assets/Orion_clouds.png'],
+          ['04d' , 'assets/Orion_clouds.png'],
+          ['04n' , 'assets/Orion_clouds.png'],
+          ['09d' , 'assets/Orion_light-rain.png'],
+          ['09n' , 'assets/Orion_light-rain.png'],
+          ['10d' , 'assets/Orion_rain.png'],
+          ['10n' , 'assets/Orion_rain.png'],
+          ['11d' , 'assets/Orion_thunderstorm-rain.png'],
+          ['11n' , 'assets/Orion_thunderstorm-rain.png'],
+          ['13d' , 'assets/Orion_snow.png'],
+          ['13n' , 'assets/Orion_snow.png'],
+          ['50d' , 'assets/Orion_fog.png'],
+          ['50n' , 'assets/Orion_fog.png']
+        ]);
+
+        if (weatherIconLookupTable.has(data.weather[0].icon)) {
+          let source = weatherIconLookupTable.get(data.weather[0].icon)
+          document.getElementById('weather-icon').innerHTML = `<img src=${source} alt="weather icon" />`
+        }
+      // iconLookUpTable (data.weather[0].icon) for lookup table here
       document.getElementById('temp').innerText = ` current temperature ${Math.round(data.main.temp) + '°'|| ''}`
       document.getElementById('feels-like').innerText = `Feels like ${Math.round(data.main.feels_like) + '°' || ''}`
       document.getElementById('condition').innerText = `${data.weather[0].description || ''}`

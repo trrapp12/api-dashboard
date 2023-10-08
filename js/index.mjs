@@ -1,7 +1,5 @@
 import { getLocation } from './config.mjs';
 
-console.log(getLocation)
-
 // **********************UNSPLASH API**********************
 fetch('http://localhost:5501/getBackground/')
   .then(response => response.json())
@@ -14,11 +12,6 @@ fetch('http://localhost:5501/getBackground/')
 
 // **********************WEATHER API**********************
   getLocation((lat, lon) => {
-
-    // if (error) {
-    //   console.error(error.message);
-    //   return;
-    // }
     // Here, you can send `lat` and `lon` to your server or do whatever you need
     fetch(`http://localhost:5501/getWeather/?lat=${lat}&lon=${lon}`)
     // ... handle the fetch response

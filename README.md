@@ -4,9 +4,7 @@
 
 <br>
 
-<video controls width="100%" autoplay muted>
-  <source src="https://github.com/trrapp12/api-dashboard/assets/11747875/e7562369-9f5e-4f8d-bd67-e094b843ec05" type="video/mov">
-<video>
+https://github.com/trrapp12/api-dashboard/assets/11747875/e7562369-9f5e-4f8d-bd67-e094b843ec05
 
 
 <br>

@@ -4,7 +4,10 @@
 
 <br>
 
-https://github.com/trrapp12/api-dashboard/assets/11747875/e7562369-9f5e-4f8d-bd67-e094b843ec05
+<video controls width="100%" autoplay muted>
+  <source src="https://github.com/trrapp12/api-dashboard/assets/11747875/e7562369-9f5e-4f8d-bd67-e094b843ec05" type="video/mov">
+<video>
+
 
 <br>
 
@@ -58,7 +61,7 @@ Click on the "View Project" button above ⬆️
 ---
 
 ### CHALLENGES I OVERCAME...
-The course was beneficial for understanding the theory of HTTP requests, URLs, endpoints, parameters, promises, callbacks and much more. However, when creating my project, I encountered several challenges that were not covered, including:
+The course was beneficial for understanding the theory of HTTP requests, URLs, endpoints, parameters, promises, callbacks and much more. However, when creating my project, I encountered several challenges that were not covered in the course material.  This afforded me the opportunity to research through various forms of documentation including MDN, stackoverflow, and the API documentation.  I eventually resolved such issues:
 
 
 - [X] Securing API keys: Placing the API key in a .env file at the root directory.

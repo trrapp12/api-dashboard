@@ -212,7 +212,7 @@ This really left me at a deficit when I went to create my own project, because I
    * which reminds me of a few other things I had to learn:
 1) now that you are using a Node.js file, you name your index.js file with a .js extension.  You have to change it to .mjs.  
 2) your index.html will now also throw an error unless you make your ```<script src="index.js"></script>``` look like this:  ```<script type="module" src="index.js"></script>```
-3) then, since I had an API call to a weather API that needed my latitude and longitude to make the call before it could come back with a response, I had to figure out where that needed to be done.  This one got tricky.  Working backwards I knew that my API request had to have the lat and long already figured out so I could put them in as parameters in either the header or the URL.  I knew I could get those from navigator API on the Window object.  So I know how to get it, and that it has to be ready to be passed into server.js.  But server.js doesn't kick off the process, because the first call has to be made from my index.js file.  Remember server.js is middleware, index.js is client side.  So if server.js needs info, it has to be passed UP to it from the index.js.  But how?  They aren't connected like my files.  I can't just do an import statement from one file to the next?  This really took a while to wrap my head around.  After a few hours of research it became clear I could use the fetch URL to pass them up.  So I created a function that would do all the logic to pull the lat and long from the navigator API.  But then what?  I have two values and one function.  I don't want to make global variables and I can't have 2 return values in one function.  So I have to expand my function that did all my navigator logic so it could take a callback function.  And what would I use for that callback function?  My fetch request.  Now since my callback function is getting called in the same scope it would have access to both the lat and long and then it would simultaneously make the API request to the server.js passing them up so that the server.js request could then use them as it's own parameters.
+3) then, since I had an API call to a weather API that needed my latitude and longitude to make the call before it could come back with a response, I had to figure out where that needed to be done.  This one got tricky.  I couldn't use any logic in the server side code, because the navigator object is provided as an API in the browser.  So it HAS to either be hard coded or obtained first on the client-side and then pushed up to the server.  But how?  They aren't connected like files in my previous projects.  I can't just do an import statement from one file to the next?  This really took a while to wrap my head around.  After a few hours of research it became clear I could use the fetch URL to pass them up.  So I created a function that would do all the logic to pull the lat and long from the navigator API.  But then what?  I have two values and one function.  I don't want to make global variables and I can't have 2 return values in one function.  So I have to expand my function that did all my navigator logic so it could take a callback function.  And what would I use for that callback function?  My fetch request.  Now since my callback function is getting called in the same scope it would have access to both the lat and long and then it would simultaneously make the API request to the server.js passing them up so that the server.js request could then use them as it's own parameters.
 4) Also, how to add parameters in headers, not just passing them in the url
 5) Running your server behind a VPN will likely get it blocked
 6) You have to use ```process.env.VARIABLE``` is how you pull up a variable from the .env file
@@ -246,29 +246,19 @@ This really left me at a deficit when I went to create my own project, because I
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
 
-- [X] Use JavaScript classes to create multiple players, multiple characters, and multiple spells that can be generated in random order.  
+- [X] Learning how to, creating, and using a backend server to serve up my request without endangering my API Key
       
-- [X] Use of Fisher-Yates shuffle algorithm for a truely random distribution in my array sorting.
+- [X] use of .env File, API key, .gitignore file
 
-- [X] A visually impressive health bar that both progress/decline and updates dynamically and in conjunction with the player status.
+- [X] parameterized insertion instead of inline insertion
 
+- [X] Use of new Map() to create a lookup table to insert my own, better UI elements than what the API offers
 
-      
-- [X] More play options (defend dice), and casting spells
-      
-- [X] I added the capability to detect when multiples of the same dice were rolled, detected which dice they belonged to, and differentiating if between multiples of multiples (i.e. pair of 3's and 3 5's rolled)
-      
-- [X] use of .replace()
-      
-- [X] use of powers ``` ** ```
-      
-- [X] use of Number()
-      
-- [X] use of Set to detect duplicates
-      
-- [X] use of .sort()
-      
-- [X] use of .shift()
+- [X] Creating a rate limiter to prevent abuse of my API key
+
+- [X] splitting out client-side from server side code.
+
+- [X] finding solutions for CORS issues
 
 ---
 

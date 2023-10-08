@@ -276,34 +276,6 @@ This really left me at a deficit when I went to create my own project, because I
 
 * Character Images created by "Travel Dawn," licensed under Adobe Standard license.
 
-* 'Choose not to be harmed—and you won't feel harmed. Don't feel harmed—and you haven't been.' --original quote by Marcus Aurelius.
-
-* 'Death may be the greatest of all human blessings.' --original quote by Socrates.
-
-* Definition of 'hæland': <a href="https://www.etymonline.com/search?q=haeland">Healer</a>, on <a href="https://www.etymonline.com/">etymonline</a>
-
-* Defintiion of 'ignis fatuus': <a href="https://www.etymonline.com/search?q=ignis%20fatuus&ref=searchbar_searchhint">ignis fatuus</a>, on <a href="https://www.etymonline.com/">etymonline</a>
-
-* Definition of 'Vliecke': <a href="https://www.etymonline.com/search?q=Vliecke">Vliecke</a>, on <a href="https://www.etymonline.com/">etymonline</a>
-
-* Definition of 'Goyathlay': <a href="https://www.britannica.com/biography/Geronimo">Geronimo Apache leader</a>, on <a href="https://www.britannica.com/">Britannica</a>
-
-* Definition of 'feohtende', 'werede', 'ofslægenne' from <a href="https://lrc.la.utexas.edu/eieol/engol/30">Old English Online: Lesson 3, Jonathan Slocum </a>, on <a href="https://liberalarts.utexas.edu/lrc/">Linguistics Research Center: College of Liberal Arts</a>
-
-* Definition of 'התחלה': <a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></p>
-
-* Definition of 'anræd': <a href="https://www.st-andrews.ac.uk/~cr30/vocabulary/">Old English Core Vocabulary</a>
-
-* itle font "Angars Ruins" created by <a href="http://www.mansgreback.com/">Mans Greback</a>. Used under non-profit license QF121285258G as this is a public facing site, but with no way nor desire of making a profit.
-
-* File # 396656517, a video of Powerful Female in medieval armor by <a href="https://stock.adobe.com/contributor/205110669/procinemastock?load_type=author&prev_url=detail">procinemastock</a>. Used under Adobe Stock license.
-
-* File # 630909246, a faceless wraith lingers in the air, by <a href="https://stock.adobe.com/contributor/207618192/justlight?load_type=author&prev_url=detail">justlight</a>. Used under Adobe Stock license.
-
-* File # 199937353, realistic dry ice smoke, by <a href="https://stock.adobe.com/contributor/206637170/mputsylo?load_type=author&prev_url=detail">myputsylo</a>. Used under Adobe Stock license.
-
-* UIcons by <a href="https://www.flaticon.com/uicons">Flaticon</a>
-
 ---
 
 ### YOU CAN FIND ME AT:

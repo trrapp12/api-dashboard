@@ -38,37 +38,26 @@ navigator to get latitude and longitude, the OpenWeatherMap API for the current 
 
 ### QUICKSTART GUIDE: 
 
-Click on the 
+Click on the "View Project" button above ⬆️
 
 ---
 
 ### Project demonstrates the following:
 
-- [X] Javascript Classes
+- [X] API calls
     
-- [X] use of this
+- [X] fetch
 
-- [X] Use of call back functions to access the state of wrapper functions
+- [X] promise chaining with .then()
     
-- [X] method chaining of .reduce() and .filter()
+- [X] async/await
     
-- [X] use of utitility functions.
-    
-- [X] multiple logical step processes
-    
-- [X] setTimeOut()
-    
-- [X] use of import statements
-    
-- [X] use of spread operators
-    
-- [X] use of chained ternary operators
-
-- [X] use of chaining javascript methods ``` new Array().filter(0).map().join() ```
+- [X] parsing responses
 
 ---
 
 ### CHALLENGES I OVERCAME...
+
 
 
 ---

@@ -31,7 +31,7 @@
 
 ― Magie
 
-This is a project focused on learning API calls.  It takes the format of a chrome extension which upon opening a new tab makes an organizational dashboard.  It includes API calls to unsplash for the background, 
+This is a project focused on learning API calls that I did as part of the [Scrimba Front-End Developer Career Path](https://scrimba.com/learn/frontend).  It takes the format of a chrome extension which upon opening a new tab makes an organizational dashboard.  It includes API calls to unsplash for the background, 
 navigator to get latitude and longitude, the OpenWeatherMap API for the current weather conditions, and it also gets the current time and has a hidden pomodorro timer for those who look 😉😉😉.
 
 ---
@@ -58,7 +58,104 @@ Click on the "View Project" button above ⬆️
 
 ### CHALLENGES I OVERCAME...
 
+1) While the course was great way to learn the theory of
 
+* http requests
+* URLs and endpoints
+* Body
+* Header
+* Resources
+* Parameters
+* Queries
+* Callbacks
+* .filter()
+* Promises
+* .then() chaining
+
+  The hands-on didn't seem to extend past this pattern:
+
+   ``` fetch('https://api.url.com/endpoint?arg1='true'&&arg2='false')
+           .then(response => response.json())
+           .then(data => {
+           //do something with the data
+   }
+   ```
+
+This really left me at a deficit when I went to create my own project, because I had to figure out a few things on my own, like:
+
+1) Well, if you are using an API key, you need to keep it secret, therefore ...
+* If you are keeping it secret, it needs to be in a .env file
+* That .env file has a certain syntax
+* that .env file has to be root directory
+2) If you have a secret API key you can't push it up to the CDN, therefore ...
+* you have to make a .gitignore file
+* the .gitignore file needs to include the following lines:
+
+   ```
+   # dotenv environment variable files
+  .env
+  .env.development.local
+  .env.test.local
+  .env.production.local
+  .env.local ```
+
+
+
+See the function below: 
+
+```javascript
+
+  function throttled(delay, fn) {
+    let lastCall = 0;
+    return function (...args) {
+      const now = new Date().getTime();
+      if (now - lastCall < delay) {
+        return;
+      }
+      lastCall = now;
+      return fn(...args);
+    };
+  }
+  
+  ```
+  
+  2) When I created key listeners I found I had to anticipate keys the user might think to hit besides the enter button to prevent them from registering.
+  
+  See code example below: 
+  
+  ```javascript
+  
+  const keyHandler = (evt) => {
+    if (evt.key === "Enter") {
+      if (player1turn === undefined) {
+        console.log(`CLICK EVENT, IF STATEMENT: ${player1turn}`);
+        determineWhoRollsFirst();
+        displayButtonMessage("Roll!");
+      } else {
+        console.log(`CLICK EVENT, ELSE STATEMENT: ${player1turn}`);
+        playerRolls(player1turn, objArray);
+        checkForWinner(player1score, player2score);
+        player1turn = !player1turn;
+      }
+    } else if (
+      evt.key === "Tab" ||
+      evt.key === "ArrowLeft" ||
+      evt.key === "Left" ||
+      evt.key === "ArrowUp" ||
+      evt.key === "Up" ||
+      evt.key === "ArrowRight" ||
+      evt.key === "Right" ||
+      evt.key === "ArrowDown" ||
+      evt.key === "Down" ||
+      evt.key === " "
+    ) {
+      console.log("nothing to see here");
+    } else {
+      alert("Please use the Enter key make selections");
+    }
+  };
+  
+  ```
 
 ---
 

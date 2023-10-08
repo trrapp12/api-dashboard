@@ -75,19 +75,21 @@ The course was beneficial for understanding the theory of HTTP requests, URLs, e
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
 
-- [X] Learning how to, creating, and using a backend server to serve up my request without endangering my API Key
+- [X] Developed a backend server to protect API keys
       
-- [X] use of .env File, API key, .gitignore file
+- [X] Utilized .env file, API key, .gitignore file
 
-- [X] parameterized insertion instead of inline insertion
+- [X] Introduced parameterized insertion
 
-- [X] Use of new Map() to create a lookup table to insert my own, better UI elements than what the API offers
+- [X] Designed a lookup table using new Map() for UI enhancements
 
-- [X] Creating a rate limiter to prevent abuse of my API key
+- [X] Implemented a rate limiter for API security
 
-- [X] splitting out client-side from server side code.
+- [X] Split out client-side from server side code.
 
-- [X] finding solutions for CORS issues
+- [X] Addressed CORS issues
+
+- [X] Setup server in production environment
 
 ---
 

@@ -84,42 +84,42 @@ Click on the "View Project" button above ⬆️
 This really left me at a deficit when I went to create my own project, because I had to figure out a few things on my own, like:
 
 1) Well, if you are using an API key, you need to keep it secret, therefore ...
-* If you are keeping it secret, it needs to be in a .env file
-* That .env file has a certain syntax
-* that .env file has to be root directory
+   * If you are keeping it secret, it needs to be in a .env file
+   * That .env file has a certain syntax
+   * that .env file has to be root directory
 2) If you have a secret API key you can't push it up to the CDN, therefore ...
-* you have to make a .gitignore file
-* the .gitignore file needs to include the following lines:
+   * you have to make a .gitignore file
+   * the .gitignore file needs to include the following lines:
 
+    ```
+    # dotenv environment variable files
+   .env
+   .env.development.local
+   .env.test.local
+   .env.production.local
+   .env.local
    ```
-   # dotenv environment variable files
-  .env
-  .env.development.local
-  .env.test.local
-  .env.production.local
-  .env.local
-  ```
-* if you have already pushed said files to github you can't just delete them, you have to do the following:
+   * if you have already pushed said files to github you can't just delete them, you have to do the following:
 
-  ```
-  git filter-branch --force --index-filter \
-  "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-PRIVATE-KEY" \
-  --prune-empty --tag-name-filter cat -- --all
-  ```
-  because deleting the file just removes the latest file, it doesn't remove the reference from previous commits where people could scrape your repo to find them.  This command rewrites your Git repository's history by applying a filter that removes the specified file from every commit.  Replace PATH-TO-YOUR-FILE-WITH-PRIVATE-KEY with the path to your file.
-
-  Then you will have to push your changes, but because you're probably working with a remote repository a normal push won't do, so you'll have to use
-
-  ```
-  git push origin --force --all
-  ```
-
-  You'll be lucky if it's just your own repository, because then you don't have to worry about collaborators.  But if you do you will need to do a rebase, so you'll have to use
-
-  ```
-  git fetch
-  git rebase origin/<branch_name>
-  ```
+      ```
+      git filter-branch --force --index-filter \
+      "git rm --cached --ignore-unmatch PATH-TO-YOUR-FILE-WITH-PRIVATE-KEY" \
+      --prune-empty --tag-name-filter cat -- --all
+      ```
+      because deleting the file just removes the latest file, it doesn't remove the reference from previous commits where people could scrape your repo to find them.  This command rewrites your Git repository's history by applying a filter that removes the specified file from every commit.  Replace PATH-TO-YOUR-FILE-WITH-PRIVATE-KEY with the path to your file.
+    
+      Then you will have to push your changes, but because you're probably working with a remote repository a normal push won't do, so you'll have to use
+    
+      ```
+      git push origin --force --all
+      ```
+    
+      You'll be lucky if it's just your own repository, because then you don't have to worry about collaborators.  But if you do you will need to do a rebase, so you'll have to use
+    
+      ```
+      git fetch
+      git rebase origin/<branch_name>
+      ```
 
 * At this point if you haven't lost it, kudos, because I was losing it.  Now you can have a private API key that exists in your github repo and your local computer just fine.  But since I want to publish this where it could be seen as a portfolio project I had to figure out the next thing.  How do I make the fetch call without passing my API key on the client side where someone could just capture it in the console?
 

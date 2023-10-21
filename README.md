@@ -45,7 +45,9 @@ navigator to get latitude and longitude, the OpenWeatherMap API for the current 
 ### QUICKSTART GUIDE: 
 
 Click on the "View Project" button above ⬆️
+
 <br/>
+
 ---
 
 ### Project demonstrates the following:
@@ -59,7 +61,9 @@ Click on the "View Project" button above ⬆️
 - [X] 'async/await'
     
 - [X] Response parsing
+
 <br/>
+
 ---
 
 ### CHALLENGES I OVERCAME...
@@ -75,7 +79,9 @@ The course was beneficial for understanding the theory of HTTP requests, URLs, e
 - [X] Rate Limiting: Implementing 'express-rate-limit' for API calls.
 
 - [X] Server & API Calls: Understanding the distinction between front-end and back-end servers, and the correct way to formulate and test API calls.
+
 <br/>
+
 ---
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
@@ -95,7 +101,9 @@ The course was beneficial for understanding the theory of HTTP requests, URLs, e
 - [X] Addressed CORS issues
 
 - [X] Setup server in production environment
+
 <br/>
+
 ---
 
 ### ATTRIBUTIONS

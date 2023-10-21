@@ -38,12 +38,13 @@ https://github.com/trrapp12/api-dashboard/assets/11747875/e7562369-9f5e-4f8d-bd6
 *This is a project focused on learning API calls that I did as part of the [Scrimba Front-End Developer Career Path](https://scrimba.com/learn/frontend).  It takes the format of a chrome extension which upon opening a new tab makes an organizational dashboard.  It includes API calls to unsplash for the background, 
 navigator to get latitude and longitude, the OpenWeatherMap API for the current weather conditions, and it also gets the current time and has a hidden pomodorro timer for those who look 😉😉😉.*
 
+<br/>
 ---
 
 ### QUICKSTART GUIDE: 
 
 Click on the "View Project" button above ⬆️
-
+<br/>
 ---
 
 ### Project demonstrates the following:
@@ -57,7 +58,7 @@ Click on the "View Project" button above ⬆️
 - [X] 'async/await'
     
 - [X] Response parsing
-
+<br/>
 ---
 
 ### CHALLENGES I OVERCAME...
@@ -73,7 +74,7 @@ The course was beneficial for understanding the theory of HTTP requests, URLs, e
 - [X] Rate Limiting: Implementing 'express-rate-limit' for API calls.
 
 - [X] Server & API Calls: Understanding the distinction between front-end and back-end servers, and the correct way to formulate and test API calls.
-
+<br/>
 ---
 
 ### MY OWN PERSONAL CONTRIBUTIONS INCLUDED 
@@ -93,7 +94,7 @@ The course was beneficial for understanding the theory of HTTP requests, URLs, e
 - [X] Addressed CORS issues
 
 - [X] Setup server in production environment
-
+<br/>
 ---
 
 ### ATTRIBUTIONS

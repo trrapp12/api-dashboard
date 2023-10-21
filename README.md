@@ -33,8 +33,8 @@ https://github.com/trrapp12/api-dashboard/assets/11747875/e7562369-9f5e-4f8d-bd6
 
 ― Magie
 
-This is a project focused on learning API calls that I did as part of the [Scrimba Front-End Developer Career Path](https://scrimba.com/learn/frontend).  It takes the format of a chrome extension which upon opening a new tab makes an organizational dashboard.  It includes API calls to unsplash for the background, 
-navigator to get latitude and longitude, the OpenWeatherMap API for the current weather conditions, and it also gets the current time and has a hidden pomodorro timer for those who look 😉😉😉.
+*This is a project focused on learning API calls that I did as part of the [Scrimba Front-End Developer Career Path](https://scrimba.com/learn/frontend).  It takes the format of a chrome extension which upon opening a new tab makes an organizational dashboard.  It includes API calls to unsplash for the background, 
+navigator to get latitude and longitude, the OpenWeatherMap API for the current weather conditions, and it also gets the current time and has a hidden pomodorro timer for those who look 😉😉😉.*
 
 ---
 

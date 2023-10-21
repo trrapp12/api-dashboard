@@ -39,6 +39,7 @@ https://github.com/trrapp12/api-dashboard/assets/11747875/e7562369-9f5e-4f8d-bd6
 navigator to get latitude and longitude, the OpenWeatherMap API for the current weather conditions, and it also gets the current time and has a hidden pomodorro timer for those who look 😉😉😉.*
 
 <br/>
+
 ---
 
 ### QUICKSTART GUIDE: 

@@ -1,7 +1,7 @@
 import { getLocation } from './config.mjs';
 
 // **********************UNSPLASH API**********************
-fetch('http://localhost:5501/getBackground/')
+fetch('https://18.209.172.144')
   .then(response => response.json())
   .then(data => {
     console.log('BACKGROUND API DATA', data)
@@ -13,7 +13,7 @@ fetch('http://localhost:5501/getBackground/')
 // **********************WEATHER API**********************
   getLocation((lat, lon) => {
     // Here, you can send `lat` and `lon` to your server or do whatever you need
-    fetch(`http://localhost:5501/getWeather/?lat=${lat}&lon=${lon}`)
+    fetch(`https://18.209.172.144/getWeather/?lat=${lat}&lon=${lon}`)
     // ... handle the fetch response
     .then(response => response.json())
     .then(data => {
